@@ -50,3 +50,10 @@ This is a simple e-shop for books application written in Symfony 4.4. It is a pa
     - [ ] Remove products
     - [ ] See all orders (edit, remove, ...)
 
+## Diagrams
+### Use case diagram
+![Use case diagram](./img/UseCaseDiagram.png)
+### Class diagram
+TBA
+
+![Class diagram](./img/ClassDiagram.png)

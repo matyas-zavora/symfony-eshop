@@ -1,4 +1,4 @@
-# <img src="./img/android-chrome-512x512.png" width="30"> symfony-eshop
+# <img src="./img/android-chrome-512x512.png" width="30"> Librictio.com
 
 ## Description
 This is a simple e-shop for books application written in Symfony 4.4. It is a part of my school project.
@@ -8,12 +8,11 @@ This is a simple e-shop for books application written in Symfony 4.4. It is a pa
 - [Sofia Borodkina]()
 
 ## Assignment
-- E-shop, na které lze objednávat knihy.
-- Uživatelé budou moci objednávat knihy i bez přihlášení.
-- Pokud se uživatel registruje a přihlásí, jeho údaje se do objednávky automaticky vyplní.
-- Admin bude moci přidávat knihy, editovat je a mazat.
-  - Táké bude moci vidět všechny objednávky a mazat je.
-
+- E-shop where you can order books.
+- Users will be able to order books even without logging in.
+- If the user registers and logs in, his data is automatically filled in the order.
+- Admin will be able to add, edit and delete books.
+  -He will also be able to see all orders and delete them.
 
 ## TODO
 - Login/Registration page
@@ -54,6 +53,7 @@ This is a simple e-shop for books application written in Symfony 4.4. It is a pa
 ### Use case diagram
 ![Use case diagram](./img/UseCaseDiagram.png)
 ### Class diagram
-TBA
-
 ![Class diagram](./img/ClassDiagram.png)
+### Activity diagram(s)
+![Activity diagram 1](./img/ActivityDiagram.png)
+![Activtiy diagram 2](./img/Acttivity_v2.png)

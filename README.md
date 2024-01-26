@@ -51,9 +51,9 @@ This is a simple e-shop for books application written in Symfony 4.4. It is a pa
 
 ## Diagrams
 ### Use case diagram
-![Use case diagram](./img/UseCaseDiagram.png)
+![Use case diagram](img/diagrams/UseCaseDiagram.png)
 ### Class diagram
-![Class diagram](./img/ClassDiagram.png)
+![Class diagram](img/diagrams/ClassDiagram.png)
 ### Activity diagram(s)
-![Activity diagram 1](./img/ActivityDiagram.png)
-![Activtiy diagram 2](./img/Acttivity_v2.png)
+![Activity diagram 1](img/diagrams/ActivityDiagram.png)
+![Activtiy diagram 2](img/diagrams/Acttivity_v2.png)

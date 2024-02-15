@@ -14,6 +14,12 @@ class RegisterFormType extends AbstractType
         $builder
             ->add('email')
             ->add('password')
+            ->add('firstName')
+            ->add('lastName')
+            ->add('phone')
+            ->add('address')
+            ->add('zip')
+            ->add('city')
         ;
     }
 

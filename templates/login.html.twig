@@ -16,6 +16,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           rel="stylesheet"/>
     <title>{{ random(['📖','📕','📘','📗','📙','🕮','📓','📚','📔']) }} Librictio - Přihlášení</title>
+    
+      <style>
+        body, html {
+            height: 100%;
+        }
+
+        .gradient-custom {
+            background: linear-gradient(45deg, #540CE8, #3B68DB, #2096D6, #02B5CF, #00D6C4);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card-registration {
+            border: none;
+        }
+
+        .form-outline {
+            position: relative;
+        }
+
+        .form-outline input {
+            padding-top: 1.3rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .form-outline input:focus~.form-label {
+            color: #540CE8;
+            top: -0.5rem;
+        }
+
+        .form-label {
+            position: absolute;
+            top: 0.7rem;
+            left: 0.8rem;
+            color: #adb5bd;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background-color: #540CE8;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #3B68DB;
+        }
+
+        a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #540CE8;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,6 +124,7 @@
                             </div>
                             <br>
                             <a href="./register">Registrovat</a>
+                    
 
 
                         </form>

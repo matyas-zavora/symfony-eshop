@@ -1,4 +1,166 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRICTO</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+
+<header class="header">
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> LIBRICTIO</a>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="./">Domov</a>
+            <a href="./">Knihy</a>
+
+        </nav>
+    </div>
+
+</header>
+
+<nav class="bottom-navbar">
+    <a href="./" class="fas fa-home"></a>
+    <a href="./" class="fas fa-list"></a>
+</nav>
+
+
+
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>Ahoj,</h3>
+            <p>Hledáš knihy po dobré ceně? Jsi na správném místě.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>Doručení zdarma</h3>
+            <p>nad 100 Kč</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>Bezpečné platby</h3>
+            <p>jo</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>Jednoduché vrácení</h3>
+            <p>do 10 dnů</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7</h3>
+            <p>Volejte kdykoliv</p>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>Knihy</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+           
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>Registrace</h3>
+        <a href="./register">Registrovat se</a>
+    </form>
+
+</section>
+
+
+<div class="row">
+       {% for product in products %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ product.img }}" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text"><strong>Cena: </strong>{{ product.price }} Kč</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+      </div>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>info</h3>
+            <p>Školní projekt c4c</p>
+            <p>Matyáš Závora</p>
+            <p>Sofia Borodkina</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+</html>
 {% endblock %}
+
